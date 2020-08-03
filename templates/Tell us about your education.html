@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Education Details</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container card bg-light">
+  <div class="form-group col-12 ">
+    
+  <form  method="post" >
+
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    <div class="btn-group btn-group-toggle " data-toggle="buttons">
+
+     <button type="submit" class="btn btn-success active " value="next/" formaction="next/"> Save & Next</button>
+     <button type="submit" class="btn btn-outline-success" formaction="back/">Back</button>
+    </div>
+  </form>
+  </div>
+  </div>
+</body>
+</html>

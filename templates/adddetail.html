@@ -1,0 +1,8 @@
+<h1>Add resume</h1>
+<br>
+<form method="POST">
+	
+	{% csrf_token %}
+	{{form.as_p}}
+	<button>POST</button>
+</form>
